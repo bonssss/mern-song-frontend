@@ -1,0 +1,91 @@
+/* src/app.css */
+body{
+/* background-color: antiquewhite; */
+}
+.app-container {
+    display: flex;
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1; /* Fill remaining space */
+  }
+  
+  .main-content {
+    flex: 1; /* Fill remaining space */
+    padding: 20px;
+  }
+  
+  /* Add additional custom styles for the main content area */
+  .main-content {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100%-250px);
+    margin-left: 250px;
+    margin-top: 100px;
+  }
+
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-menu {
+    padding: 20px;
+    list-style: none;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        left: -250px;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1100;
+    }
+
+    /* Push main content when sidebar is open */
+    .main-content {
+        margin-left: 0; /* Adjusted for mobile devices */
+        transition: margin-left 0.3s ease;
+    }
+
+    .main-container {
+        transition: margin-left 0.3s ease;
+    }
+
+    .sidebar.open + .main-container .main-content {
+        margin-left: 250px; /* Same width as sidebar */
+    }
+}
+
+  

@@ -1,0 +1,86 @@
+/* SongList.css */
+
+.song-list-container {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .search-container input{
+    width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+
+  }
+  .song-list-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .song-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .song-table th,
+  .song-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .song-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .song-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .song-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .edit-input {
+    width: calc(100% - 16px);
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .edit-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .edit-actions button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(235, 180, 180);
+    border :none;
+  }
+  
+  /* .edit-actions button:hover {
+    background-color: #e8dddd;
+    color: #121212;
+  } */
+
+  .edit:hover{
+    color: aliceblue;
+    background-color: #181313;
+
+
+  }
+  .delete:hover{
+    color: #181313;
+    background-color: red;
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
+  

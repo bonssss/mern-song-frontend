@@ -1,0 +1,37 @@
+/* src/components/songform.css */
+.song-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100%-250px);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .song-form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .song-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .song-form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .song-form-container button:hover {
+    background-color: #0056b3;
+  }
+  
